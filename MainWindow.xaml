@@ -1,0 +1,33 @@
+﻿<Window x:Class="FileEncryption.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FileEncryption"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="filePicker" Content="Please select file to " HorizontalAlignment="Left" Margin="64,33,0,0" VerticalAlignment="Top" Height="50" Width="124" Click="filePicker_Click"/>
+        <Label x:Name="filePathLBL" Content="" HorizontalAlignment="Left" Margin="220,49,0,0" VerticalAlignment="Top" Height="34" Width="435"/>
+
+        <Button x:Name="EncryptFileButton" Content="Encrypt File Button" HorizontalAlignment="Left" Margin="64,117,0,0" VerticalAlignment="Top" Width="124" Height="32" Click="EncryptFileButton_Click"/>
+        <Label x:Name="EncryptFileLBL" Content="" HorizontalAlignment="Left" Margin="220,115,0,0" VerticalAlignment="Top" Height="34" Width="435"/>
+
+        <Button x:Name="DecryptFileButton" Content="Decrypt File Button" HorizontalAlignment="Left" Margin="64,157,0,0" VerticalAlignment="Top" Width="124" Height="33" Click="DecryptFileButton_Click"/>
+        <Label x:Name="DecryptFileLBL" Content="" HorizontalAlignment="Left" Margin="220,155,0,0" VerticalAlignment="Top" Height="34" Width="435"/>
+
+        <Button x:Name="SaveFileZipButton" Content="Save File as Zip" HorizontalAlignment="Left" Margin="64,198,0,0" VerticalAlignment="Top" Width="124" Height="32" Click="SaveFileZipButton_Click"/>
+        <Label x:Name="SaveFileZipLBL" Content="" HorizontalAlignment="Left" Margin="220,195,0,0" VerticalAlignment="Top" Height="34" Width="435"/>
+
+        <Button x:Name="UnZipFileFromZipButton" Content="UnZipFile From Zip" HorizontalAlignment="Left" Margin="64,238,0,0" VerticalAlignment="Top" Width="124" Height="32" Click="UnZipFileFromZipButton_Click"/>
+        <Label x:Name="UnZipFileFromZipLBL" Content="" HorizontalAlignment="Left" Margin="220,235,0,0" VerticalAlignment="Top" Height="34" Width="435"/>
+
+        <Button x:Name="EncryptStringButton" Content="Encrypt String" HorizontalAlignment="Left" Margin="64,278,0,0" VerticalAlignment="Top" Width="124" Height="32" Click="EncryptStringButton_Click"/>
+        <TextBox x:Name="EncryptStringtxtBox"  HorizontalAlignment="Left" Margin="220,281,0,0" VerticalAlignment="Top" Height="34" Width="521"/>
+
+        <Button x:Name="DecryptStringButton" Content="Decrypt String" HorizontalAlignment="Left" Margin="64,318,0,0" VerticalAlignment="Top" Width="124" Height="32" Click="DecryptStringButton_Click"/>
+        <Label x:Name="DecryptStringLBL" Content="" HorizontalAlignment="Left" Margin="220,315,0,0" VerticalAlignment="Top" Height="34" Width="435"/>
+        <TextBox x:Name="DecryptStringtxtBox"  HorizontalAlignment="Left" Margin="220,318,0,0" VerticalAlignment="Top" Height="34" Width="521"/>
+
+    </Grid>
+</Window>
